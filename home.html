@@ -97,7 +97,7 @@
                 width: 80%;
             }
 
-            img{
+            #me{
                 margin-left: 25px;
                 width: 20rem;
                 height: 20rem;
@@ -122,10 +122,62 @@
                 width: 35%;
             }
 
+            #asidebox{
+                background-color: white;
+                border: solid 2px #cccccc;
+                border-radius: 10px;
+                position:absolute;
+                right: 3%;
+                top: 15%;
+                height: 700px;
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                padding-left: 5px;
+                align-items: center;
+            }
+
             #footerbox{
                 text-align: center;
                 font-weight: bold;
                 font-size: 20px;
+            }
+
+            aside > button:nth-child(1){
+                border-radius: 2px;
+                font-size: 20px;
+                width: 30px;
+                height: 30px;
+                margin: 5px;
+            }
+
+            #logos{
+                display: flex;
+                flex-direction: row;
+                width: 45%;
+                background-color: white;
+                gap: 20px;
+                padding: 5px;
+                height: 80px;
+                margin-top: 30px;
+            }
+
+            .hover:hover{
+                font-size: 110%;
+                font-weight: bold;
+                -webkit-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                transform: scale(1.1);
+            }
+            .hovertitle:hover{
+                font-size: 145%;
+                font-weight: bold;
+                -webkit-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                transform: scale(1.1);
+            }
+            .hoverlarger:hover{
+                font-weight: bold;
             }
         </style>
     </head>
@@ -141,7 +193,7 @@
             </header>
             <main id="mainbox">
                 <section id="biography">
-                    <img src="./images/eu.jpg" alt="Foto minha">
+                    <img src="./images/eu.jpg" alt="Foto minha" id="me">
                     <div id="paragraph">
                         <p>
                             Por que se tornar um programador?
@@ -155,8 +207,23 @@
                 </section>
                     <button class="button" id="saibamais">SAIBA MAIS</button>
             </main>
-            <aside id="asidebox">
-                mais informações sobre mim
+            <aside id="asidebox" style="visibility: hidden;">
+                <button id="exit" class="button">x</button>
+                <h2 class="hovertitle">🤖 Hello world! I'm João Marangoni 🤖</h2>
+                <p class="hover">💻 Future sistems analyst 📚 Student at FATEC <br>✨ Brazilian 🚀 São Paulo - Brazil</p>
+                <h2 class="hovertitle">↘️ About me ↙️</h2>
+                <p class="hoverlarger"><img src="https://slackmojis.com/emojis/60081-javascript-on-fire/download" alt="Javascript icon" width="30" height="30"> 
+                    Atualmente concluindo a trilha fundamentar da ROCKETSEAT, aonde estou aprendendo HTML, CSS, Javascript e outros recursos <br>
+                <img src="https://slackmojis.com/emojis/2240-programmer/download" alt="Emoji" width="30" height="30"> Estudando linguagem C na faculdade <br>
+                <img src="https://slackmojis.com/emojis/37629-job-search/download" alt="Emoji" width="30" height="30"> procurando emprego <br>
+                <img src="https://slackmojis.com/emojis/10717-csgo/download" alt="CS logo" width="30" height="30"> Hobbie: Jogar cs:go</p>
+                <h2 class="hovertitle">🈯 Constantemente estudando 🈯</h2>
+                <div id="logos">
+                    <img class="hover" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/800px-CSS3_logo_and_wordmark.svg.png" alt="CSS logo" width="50">
+                    <img class="hover" src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML logo" width="50">
+                    <img class="hover" src="https://slackmojis.com/emojis/151-javascript/download" alt="JavaScript logo" width="50">
+                    <img class="hover" src="https://img.icons8.com/color/480/c-programming.png" alt="Language C logo" width="50">
+                </div>
             </aside>
             <footer id="footerbox">
                 <blockquote>
@@ -174,6 +241,22 @@
             code.onclick = () => window.location.href = 'codes.html';
             const contact = document.getElementById('contact');
             contact.onclick = () => window.location.href = 'contact.html';
+            const more = document.getElementById('saibamais');
+            more.addEventListener('click',function(){
+                const aside = document.getElementById('asidebox');
+                let atributes = aside.attributes;
+                if(atributes.length == 2){
+                    aside.removeAttribute('style');
+                }
+            });
+            const exit = document.getElementById('exit');
+            exit.addEventListener('click',function(){
+                const aside = document.getElementById('asidebox');
+                let atributes = aside.attributes;
+                if(atributes.length == 1){
+                    aside.setAttribute('style','visibility: hidden;');
+                }
+            })
         </script>
     </body>
 </html>
