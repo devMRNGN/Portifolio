@@ -154,12 +154,12 @@
             #logos{
                 display: flex;
                 flex-direction: row;
-                width: 45%;
+                justify-content: center;
+                width: 90%;
                 background-color: white;
-                gap: 20px;
-                padding: 5px;
-                height: 80px;
-                margin-top: 30px;
+                gap: 5px;
+                margin-top: 5%;
+                height: 40px;
             }
 
             .hover:hover{
@@ -178,6 +178,17 @@
             }
             .hoverlarger:hover{
                 font-weight: bold;
+            }
+
+            #boxexitbutton{
+                width: 98%;
+                display: flex;
+                justify-content: flex-end;
+                margin: 5px;
+            }
+
+            #exit{
+                width: 10%;
             }
         </style>
     </head>
@@ -208,7 +219,7 @@
                     <button class="button" id="saibamais">SAIBA MAIS</button>
             </main>
             <aside id="asidebox" style="visibility: hidden;">
-                <button id="exit" class="button">x</button>
+                <span id="boxexitbutton"><button id="exit" class="button">x</button></span>
                 <h2 class="hovertitle">🤖 Hello world! I'm João Marangoni 🤖</h2>
                 <p class="hover">💻 Future sistems analyst 📚 Student at FATEC <br>✨ Brazilian 🚀 São Paulo - Brazil</p>
                 <h2 class="hovertitle">↘️ About me ↙️</h2>
@@ -219,10 +230,10 @@
                 <img src="https://slackmojis.com/emojis/10717-csgo/download" alt="CS logo" width="30" height="30"> Hobbie: Jogar cs:go</p>
                 <h2 class="hovertitle">🈯 Constantemente estudando 🈯</h2>
                 <div id="logos">
-                    <img class="hover" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/800px-CSS3_logo_and_wordmark.svg.png" alt="CSS logo" width="50">
-                    <img class="hover" src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML logo" width="50">
-                    <img class="hover" src="https://slackmojis.com/emojis/151-javascript/download" alt="JavaScript logo" width="50">
-                    <img class="hover" src="https://img.icons8.com/color/480/c-programming.png" alt="Language C logo" width="50">
+                    <img class="hover" src="https://img.shields.io/badge/-JavaScript-white?style=for-the-badge&logo=javascript&labelColor=white" alt="JS logo">
+                    <img class="hover" src="https://img.shields.io/badge/-HTML-white?style=for-the-badge&logo=HTML5&labelColor=white" alt="HTML logo">
+                    <img class="hover" src="https://img.shields.io/badge/-CSS-white?style=for-the-badge&logo=CSS3&labelColor=white" alt="CSS logo">
+                    <img class="hover" src="https://img.shields.io/badge/-Linguagem%20C-white?style=for-the-badge&logo=C&labelColor=white" alt="Language C logo">
                 </div>
             </aside>
             <footer id="footerbox">
