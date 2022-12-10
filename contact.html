@@ -1,37 +1,126 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contatos</title>
-</head>
-<body>
-    <div id="homebox">
-        <header>
-            <h1>Informações e contato</h1>
-        </header>
-        <main>
-            <section>
-                <button id="email">Email</button>
-                <button id="whatsapp">Whatsapp</button>
-                <button id="tel">Telefone</button>
-            </section>
-            <article>
-                <h4>Curriculum</h4>
-                <p>Informações do curriculo</p>
-            </article>
-            <button onclick="window.location.href = 'home.html'">Voltar ao inicio</button>
-        </main>
-        <footer id="footer">
-            <blockquote>
-                Direitos reservados <br>
-                <cite>devMRNGN</cite>
-            </blockquote>
-        </footer>
-    </div>
-    <script>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Homepage</title>
+        <style>
+            body{
+                margin: 0;
+                box-sizing: border-box;
+                background-color: #e5e5e5;
+                font-family: 'Courier New', Courier, monospace;
+            }
 
-    </script>
-</body>
+            #homebox{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 99.8vh;
+                gap: 0px;
+            }
+
+            #headerbox{
+                display: flex; 
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            #navbox{
+                background-color: white;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                height: 8vh;
+                align-items: center;
+                border: #cccccc 2px solid;
+            }
+
+            .button{
+                font-size: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 20%;
+                height: 50px;
+                border-radius: 15px;
+                border: 1px solid #c2361e;
+                background-color: #ff7b5a;
+                color: white;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            
+            #contact{
+                background-color: #3e6fea;
+                border: 1.5px #2e18ef solid;
+            }
+            
+            .button:hover{
+                color: black;
+                -webkit-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                transform: scale(1.1);
+            }
+
+            #mainbox{
+                margin-right: 30%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 30px;
+            }
+
+            #footerbox{
+                text-align: center;
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="homebox">
+            <header id="headerbox">
+                <nav id="navbox">
+                    <button class="button" id="home">HOME</button>
+                    <button class="button" id="language">LINGUAGENS</button>
+                    <button class="button" id="code">CÓDIGOS</button>
+                    <button class="button" id="contact">CONTATO</button>
+                </nav>
+            </header>
+            <main>
+                <section>
+                    <button id="email" class="button">Email</button>
+                    <button id="whatsapp" class="button">Whatsapp</button>
+                    <button id="tel" class="button">Telefone</button>
+                    <button id="github" class="button">Github</button>
+                    <button id="linkedin" class="button">Linkedin</button>
+                </section>
+                <article>
+                    <h4>Curriculum</h4>
+                    <p>Informações do curriculo</p>
+                </article>
+            </main>
+            <footer id="footerbox">
+                <blockquote>
+                    Direitos reservados <br>
+                    <cite>by:<strong>DEVMRNGN</strong></cite>
+                </blockquote>
+            </footer>
+        </div>
+        <script>
+            const home = document.getElementById('home');
+            home.onclick = () => window.location.href = 'home.html';
+            const language = document.getElementById('language');
+            language.onclick = () => window.location.href = 'language.html';
+            const code = document.getElementById('code');
+            code.onclick = () => window.location.href = 'codes.html';
+            const contact = document.getElementById('contact');
+            contact.onclick = () => window.location.href = 'contact.html';
+        </script>
+    </body>
 </html>

@@ -1,56 +1,131 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linguagens</title>
-</head>
-<body>
-    <div id="homebox">
-        <header id="hederbox">
-            <h1>Códigos</h1>
-            <nav id="navegationbox">
-                <button id="home">Home</button>
-                <button id="language">Linguagens</button>
-                <button id="code">Códigos</button>
-                <button id="contact">Contato</button>
-            </nav>
-        </header>
-        <main id="mainbox">
-            <section id="linguagec">
-                <img src="https://img.icons8.com/color/480/c-programming.png" alt="Language C logo" width="50">
-                <p>Explicando aonde e o que eu aprendi em C</p>
-            </section>
-            <button id="button-c">View code</button>
-            <section id="javascript">
-                <img src="https://slackmojis.com/emojis/151-javascript/download" alt="JavaScript logo" width="50">
-                <p>explicando aonde e o que eu sei em js</p>
-            </section>
-            <button id="button-js">View code</button>
-            <section id="html-e-css">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/800px-CSS3_logo_and_wordmark.svg.png" alt="CSS logo" width="50">
-                <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML logo" width="50">
-                <p></p>
-            </section>
-            <button id="button-html-e-css">View code</button>
-        </main>
-        <footer id="footerbox">
-            <blockquote>
-                Direitos reservados <br>
-                <cite>devMRNGN</cite>
-            </blockquote>
-        </footer>
-    </div>
-    <script>
-        const home = document.getElementById('home');
-        home.onclick = () => window.location.href = 'home.html';
-        const language = document.getElementById('language');
-        language.onclick = () => window.location.href = 'language.html';
-        const code = document.getElementById('code');
-        code.onclick = () => window.location.href = 'codes.html';
-        const contact = document.getElementById('contact');
-        contact.onclick = () => window.location.href = 'contact.html';
-    </script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Homepage</title>
+        <style>
+            body{
+                margin: 0;
+                box-sizing: border-box;
+                background-color: #e5e5e5;
+                font-family: 'Courier New', Courier, monospace;
+            }
+
+            #homebox{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 99.8vh;
+                gap: 0px;
+            }
+
+            #headerbox{
+                display: flex; 
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            #navbox{
+                background-color: white;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                height: 8vh;
+                align-items: center;
+                border: #cccccc 2px solid;
+            }
+
+            .button{
+                font-size: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 20%;
+                height: 50px;
+                border-radius: 15px;
+                border: 1px solid #c2361e;
+                background-color: #ff7b5a;
+                color: white;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            
+            #language{
+                background-color: #3e6fea;
+                border: 1.5px #2e18ef solid;
+            }
+            
+            .button:hover{
+                color: black;
+                -webkit-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                transform: scale(1.1);
+            }
+
+            #mainbox{
+                margin-right: 30%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 30px;
+            }
+
+            #footerbox{
+                text-align: center;
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="homebox">
+            <header id="headerbox">
+                <nav id="navbox">
+                    <button class="button" id="home">HOME</button>
+                    <button class="button" id="language">LINGUAGENS</button>
+                    <button class="button" id="code">CÓDIGOS</button>
+                    <button class="button" id="contact">CONTATO</button>
+                </nav>
+            </header>
+            <main id="mainbox">
+                <section id="linguagec">
+                    <img src="https://img.icons8.com/color/480/c-programming.png" alt="Language C logo" width="50">
+                    <p>Explicando aonde e o que eu aprendi em C</p>
+                </section>
+                <button id="button-c" class="button">View code</button>
+                <section id="javascript">
+                    <img src="https://slackmojis.com/emojis/151-javascript/download" alt="JavaScript logo" width="50">
+                    <p>explicando aonde e o que eu sei em js</p>
+                </section>
+                <button id="button-js" class="button">View code</button>
+                <section id="html-e-css">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/800px-CSS3_logo_and_wordmark.svg.png" alt="CSS logo" width="50">
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML logo" width="50">
+                    <p></p>
+                </section>
+                <button id="button-html-e-css" class="button">View code</button>
+            </main>
+            <footer id="footerbox">
+                <blockquote>
+                    Direitos reservados <br>
+                    <cite>by:<strong>DEVMRNGN</strong></cite>
+                </blockquote>
+            </footer>
+        </div>
+        <script>
+            const home = document.getElementById('home');
+            home.onclick = () => window.location.href = 'home.html';
+            const language = document.getElementById('language');
+            language.onclick = () => window.location.href = 'language.html';
+            const code = document.getElementById('code');
+            code.onclick = () => window.location.href = 'codes.html';
+            const contact = document.getElementById('contact');
+            contact.onclick = () => window.location.href = 'contact.html';
+        </script>
+    </body>
 </html>
