@@ -6,31 +6,154 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Homepage</title>
         <style>
+            body{
+                margin: 0;
+                box-sizing: border-box;
+                background-color: #e5e5e5;
+                font-family: 'Courier New', Courier, monospace;
+            }
+
+            #homebox{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 99.8vh;
+                gap: 0px;
+            }
+
+            #headerbox{
+                display: flex; 
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            #navbox{
+                background-color: white;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                height: 8vh;
+                align-items: center;
+                border: #cccccc 2px solid;
+            }
+
+            .button{
+                font-size: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 20%;
+                height: 50px;
+                border-radius: 15px;
+                border: 1px solid #c2361e;
+                background-color: #ff7b5a;
+                color: white;
+                font-family: 'Courier New', Courier, monospace;
+            }
             
+            #home{
+                background-color: #3e6fea;
+                border: 1.5px #2e18ef solid;
+            }
+            
+            .button:hover{
+                color: black;
+                -webkit-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                transform: scale(1.1);
+            }
+
+            #mainbox{
+                margin-right: 30%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 30px;
+            }
+
+            #biography{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 2%;
+                background-color: white;
+                border-radius: 15px;
+                height: 25rem;
+                width: 80%;
+                border: #cccccc 2px solid;
+            }
+
+            #paragraph{
+                height: 380px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                padding: 20px;
+                width: 80%;
+            }
+
+            img{
+                margin-left: 25px;
+                width: 20rem;
+                height: 20rem;
+                border-radius: 10px;
+                border: #cccccc 2px solid;
+                padding: 2.5px;
+
+            }
+
+            div p:nth-child(1) {
+                font-size: 32px;
+                font-weight: bold;
+            }
+
+            div p:nth-child(2){
+                font-size: 22.8px;
+            }
+
+            #saibamais{
+                font-size: 45px;
+                height: 80px;
+                width: 35%;
+            }
+
+            #footerbox{
+                text-align: center;
+                font-weight: bold;
+                font-size: 20px;
+            }
         </style>
     </head>
     <body>
         <div id="homebox">
             <header id="headerbox">
-                <h1>devMRNGN</h1>
-                <nav>
-                    <button onclick="window.location.href = 'home.html'">Home</button>
-                    <button onclick="window.location.href = 'linguages.html'">Linguagens</button>
-                    <button onclick="window.location.href = 'codes.html'">Códigos</button>
-                    <button onclick="window.location.href = 'contact.html'">Contatos</button>
+                <nav id="navbox">
+                    <button class="button" id="home">HOME</button>
+                    <button class="button" id="language">LINGUAGENS</button>
+                    <button class="button" id="code">CÓDIGOS</button>
+                    <button class="button" id="contact">CONTATO</button>
                 </nav>
             </header>
             <main id="mainbox">
                 <section id="biography">
                     <img src="./images/eu.jpg" alt="Foto minha">
-                    <h1>👽Por que escolhi programar?👽</h1>
-                    <p>
-                        Programar é um amor para mim, me sinto muito bem quando me deparo com coisas que exigem lógica e outras habilidades. 
-                        A tecnologia abriu meus olhos quando eu era criança, sempre adorei estudar e isso me impulsionou cada vez mais para 
-                        me tornar um analista e desenvolvedor de dados eficiente e eficaz.
-                    </p>
+                    <div id="paragraph">
+                        <p>
+                            Por que se tornar um programador?
+                        </p>
+                        <p>
+                            Programar é um amor para mim, me sinto muito bem quando me deparo com coisas que exigem lógica e outras habilidades. 
+                            Quando eu era uma criança imaginei um mundo incrível por meio da tecnologia e desejo contribuir para esse mundo, sempre adorei estudar e isso me impulsionou cada vez mais para 
+                            me tornar um analista e desenvolvedor de dados eficiente e eficaz.
+                        </p>
+                    </div>
                 </section>
-                <button>Saiba mais</button>
+                    <button class="button" id="saibamais">SAIBA MAIS</button>
             </main>
             <aside id="asidebox">
                 mais informações sobre mim
@@ -38,12 +161,19 @@
             <footer id="footerbox">
                 <blockquote>
                     Direitos reservados <br>
-                    <cite>devMRNGN</cite>
+                    <cite>by:<strong>DEVMRNGN</strong></cite>
                 </blockquote>
             </footer>
         </div>
         <script>
-
+            const home = document.getElementById('home');
+            home.onclick = () => window.location.href = 'home.html';
+            const language = document.getElementById('language');
+            language.onclick = () => window.location.href = 'language.html';
+            const code = document.getElementById('code');
+            code.onclick = () => window.location.href = 'codes.html';
+            const contact = document.getElementById('contact');
+            contact.onclick = () => window.location.href = 'contact.html';
         </script>
     </body>
 </html>

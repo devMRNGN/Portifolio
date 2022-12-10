@@ -11,10 +11,10 @@
         <header id="hederbox">
             <h1>Códigos</h1>
             <nav id="navegationbox">
-                <button onclick="window.location.href = 'home.html'">Home</button>
-                <button onclick="window.location.href = 'linguages.html'">Linguagens</button>
-                <button onclick="window.location.href = 'codes.html'">Códigos</button>
-                <button onclick="window.location.href = 'contact.html'">Contatos</button>
+                <button id="home">Home</button>
+                <button id="language">Linguagens</button>
+                <button id="code">Códigos</button>
+                <button id="contact">Contato</button>
             </nav>
         </header>
         <main id="mainbox">
@@ -43,7 +43,14 @@
         </footer>
     </div>
     <script>
-
+        const home = document.getElementById('home');
+        home.onclick = () => window.location.href = 'home.html';
+        const language = document.getElementById('language');
+        language.onclick = () => window.location.href = 'language.html';
+        const code = document.getElementById('code');
+        code.onclick = () => window.location.href = 'codes.html';
+        const contact = document.getElementById('contact');
+        contact.onclick = () => window.location.href = 'contact.html';
     </script>
 </body>
 </html>

@@ -9,51 +9,74 @@
             body{
                 margin: 0;
                 box-sizing: border-box;
-                background-color: #778899;
+                background-color: #e5e5e5;
                 color: #2c2c2c;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 99.8vh;
+                font-family: 'Courier New', Courier, monospace;
             }
             .container{
                 display: flex;
                 flex-direction: column;
-                height: 99.8vh;
                 align-items: center;
-                justify-content: center;
+                justify-content: space-around;
+                background-color: white;
+                width: 60%;
+                border: 4px #cccccc solid;
+                border-radius: 30px;
+                height: 600px;
             }
 
             button {
-                font-size: 60px;
-                background-color: #3b5998;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 80px;
                 width: 30rem;
                 height: 8rem;
-                border-radius: 40px;
-                border: solid 3px #3f3f3f;
-                color: #2c2c2c;
+                text-align: center;
+                border-radius: 30px;
+                border: 1.5px solid #ff5232;
+                background-color: #ff7b5a;
+                color: white;
+            }
+
+            button:hover{
+                color: black;
+                -webkit-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                transform: scale(1.1);
             }
 
             header > h1{
-                font-size: 80px;
+                font-size: 65px;
             }
 
             blockquote{
                 text-align: center;
                 font-size: 30px;
+                font-weight: bold;
             }
         </style>
     </head>
     <body>
         <div class="container">
             <header>
-                <h1>Portifólio do João Marangoni</h1>
+                <h1>Portifólio: João Marangoni</h1>
             </header>
             <main>
-                    <button onclick="window.location.href = 'home.html'">Ir para o ínicio</button>
+                    <button>Homepage</button>
             </main>
             <footer>
                 <blockquote>
                     Direitos reservados <br>
-                    <cite>DevMRNGN</cite>
+                    <cite>DEVMRNGN</cite>
                 </blockquote>
             </footer>
         </div>
+        <script>
+            const button = document.querySelector('main > button');
+            button.onclick = () => window.location.href = 'home.html';
+        </script>
     </body>
 </html>
