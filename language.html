@@ -17,7 +17,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                height: 99.8vh;
+                height: 150vh;
                 gap: 0px;
             }
 
@@ -36,6 +36,7 @@
                 height: 8vh;
                 align-items: center;
                 border: #cccccc 2px solid;
+                position: fixed;
             }
 
             .button{
@@ -66,12 +67,11 @@
             }
 
             #mainbox{
-                margin-right: 30%;
+                margin-top: 30px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                gap: 30px;
             }
 
             #footerbox{
@@ -80,6 +80,48 @@
                 font-size: 20px;
             }
 
+            img{
+                margin: 10px;
+                height: 250px;
+                width: 250px;
+                border: 2px #cccccc solid;
+                background-color: white;
+                padding: 3px;
+            }
+
+            .section{
+                font-weight: bold;
+                border: 2px solid #cccccc;
+                width: 60%;
+                height: 300px;
+                background-color: white;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                gap: 10px;
+                align-items: center;
+                margin: 15px 0;
+            }
+
+            .sectiontwo{
+                font-weight: bold;
+                border: 2px solid #cccccc;
+                width: 60%;
+                height: 300px;
+                background-color: white;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                gap: 10px;
+                align-items: center;
+                margin: 15px 0;
+            }
+
+            .about{
+                height: 260px;
+                width: 70%;
+                font-size: 23px;
+            }
         </style>
     </head>
     <body>
@@ -93,20 +135,30 @@
                 </nav>
             </header>
             <main id="mainbox">
-                <section id="linguagec">
-                    <img src="https://img.icons8.com/color/480/c-programming.png" alt="Language C logo" width="50">
-                    <p>Explicando aonde e o que eu aprendi em C</p>
+                <section id="linguagec" class="section">
+                    <img src="https://cdn.pixabay.com/photo/2017/04/14/11/45/letter-c-2229970_960_720.png" alt="Language C logo">
+                    <p class="about">A linguagem C foi a primeira linguagem que tive contato e é a minha linguagem preferida, 
+                        apesar da dificuldade eu adoro a sintaxe complexa, apartir dela descobri que sou apaixonado por back-end e low languages. <br>
+                        Apesar de C ser minha linguagem favorita, ainda tem muitos conceitos desconhecidos e sempre 
+                        vai ter, para isso pretendo me esforçar sempre, buscando conhecimento sobre nao só na falculdade mas juntamente em outras fontes.
+                    </p>
                 </section>
                 <button id="button-c" class="button">View code</button>
-                <section id="javascript">
-                    <img src="https://slackmojis.com/emojis/151-javascript/download" alt="JavaScript logo" width="50">
-                    <p>explicando aonde e o que eu sei em js</p>
+                <section id="javascript" class="sectiontwo">
+                    <p class="about">
+                        Comecei a estudar Javascript pois não queria ter que esperar por 4 semestres para conseguir um emprego na área, por indicação de um amigo que trabalha na área, dei 
+                        ínicio ao curso <em>DISCOVER</em> da Rocketseat e desde então sigo estudando sempre que tenho algum tempo, atualmente concluí 60% do curso.
+                        Meu objetivo daqui para frente é dominar mais a DOM <em>(Document Object Model)</em> para ter mais clareza na integração do html com o javascript e melhorar minha lógica atrávez de exercícios e desafios.
+                    </p>
+                    <img src="http://cdn.mos.cms.futurecdn.net/EzgdmaCQuT84bgDL4fhXZS.jpg" alt="JavaScript logo">
                 </section>
                 <button id="button-js" class="button">View code</button>
-                <section id="html-e-css">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/800px-CSS3_logo_and_wordmark.svg.png" alt="CSS logo" width="50">
-                    <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML logo" width="50">
-                    <p></p>
+                <section id="html" class="section">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/197/996/858/abstract-css-html5-webdesign-wallpaper-preview.jpg" alt="css and html image">
+                    <p class="about">
+                        Fui introduzido a aprender HTML e CSS graças ao curso da Rocketseat, nunca fui muito fã de front-end mas ao decorrer do meu aprendizado me dei conta que é imensamente divertido lidar com conteúdo e estilização.
+                        Esse portifólio é meu primeiro projeto após adquirir um conhecimento básico de ambas tecnologias, atualmente pretendo melhorar cada vez mais minha semântica para dar mais acessibilidade as pessoas e acionar mais motores de buscas.
+                    </p>
                 </section>
                 <button id="button-html-e-css" class="button">View code</button>
             </main>
