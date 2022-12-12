@@ -120,13 +120,26 @@
             .about{
                 height: 260px;
                 width: 70%;
-                font-size: 23px;
+                font-size: 22.2px;
             }
 
             section:hover{
                 -webkit-transform: scale(1.05);
                 -ms-transform: scale(1.05);
                 transform: scale(1.05);
+            }
+
+            .invisibleButton{
+                border: solid red 1px;
+                position: absolute;
+                top: 0px;
+                width: 99.8%;
+                height: 150vh;
+                background-color: #cccccc;
+            }
+
+            #exit{
+                width: 7%;
             }
         </style>
     </head>
@@ -149,8 +162,15 @@
                         vai ter, para isso pretendo me esforçar sempre, buscando conhecimento sobre nao só na falculdade mas juntamente em outras fontes.
                     </p>
                 </section>
-                <button id="button-c" class="button">View code</button>
-                <section id="javascript" class="sectiontwo" ckass="hover">
+                <button id="showC" class="button">View code</button>
+                <div id="divC" style="visibility:hidden" class="invisibleButton">
+                    <button class="button" id="exitC">x</button>
+                    <img src="" alt="Códigos programados em linguagem C">
+                    <p>
+                        ALGUM CONTEUDO
+                    </p>
+                </div>
+                <section id="javascript" class="sectiontwo" class="hover">
                     <p class="about">
                         Comecei a estudar Javascript pois não queria ter que esperar por 4 semestres para conseguir um emprego na área, por indicação de um amigo que trabalha na área, dei 
                         ínicio ao curso <em>DISCOVER</em> da Rocketseat e desde então sigo estudando sempre que tenho algum tempo, atualmente concluí 60% do curso.
@@ -158,7 +178,14 @@
                     </p>
                     <img src="http://cdn.mos.cms.futurecdn.net/EzgdmaCQuT84bgDL4fhXZS.jpg" alt="JavaScript logo">
                 </section>
-                <button id="button-js" class="button">View code</button>
+                <button id="showJs" class="button">View code</button>
+                <div id="divJs" style="visibility: hidden" class="invisibleButton">
+                    <button class="button" id="exitJs">x</button>
+                    <img src="" alt="Códigos programados em linguagem JavaScript">
+                    <p>
+                        ALGUM CONTEUDO
+                    </p>
+                </div>
                 <section id="html" class="section" class="hover">
                     <img src="https://c4.wallpaperflare.com/wallpaper/197/996/858/abstract-css-html5-webdesign-wallpaper-preview.jpg" alt="css and html image">
                     <p class="about">
@@ -166,7 +193,14 @@
                         Esse portifólio é meu primeiro projeto após adquirir um conhecimento básico de ambas tecnologias, atualmente pretendo melhorar cada vez mais minha semântica para dar mais acessibilidade as pessoas e acionar mais motores de buscas.
                     </p>
                 </section>
-                <button id="button-html-e-css" class="button">View code</button>
+                <button id="showHtml" class="button">View code</button>
+                <div id="divHtml" style="visibility:hidden" class="invisibleButton">
+                    <button class="button" id="exitHtml">x</button>
+                    <img src="" alt="Códigos programados em linguagem Html e CSS">
+                    <p>
+                        ALGUM CONTEUDO
+                    </p>
+                </div>
             </main>
             <footer id="footerbox">
                 <blockquote>
@@ -184,6 +218,39 @@
             code.onclick = () => window.location.href = 'codes.html';
             const contact = document.getElementById('contact');
             contact.onclick = () => window.location.href = 'contact.html';
+            // LINGUAGEM C
+            const buttonViewCodeC = document.getElementById('showC');
+            buttonViewCodeC.addEventListener('click',function(){
+                const divC = document.getElementById('divC');
+                divC.removeAttribute('style');
+            });
+            const exitC = document.getElementById('exitC');
+            exitC.addEventListener('click',function(){
+                const divC = document.getElementById('divC');
+                divC.setAttribute('style','visibility: hidden');
+            });
+            // JAVASCRIPT
+            const buttonViewCodeJs = document.getElementById('showJs');
+            buttonViewCodeJs.addEventListener('click', function(){
+                const divJs = document.getElementById('divJs');
+                divJs.removeAttribute('style');
+            });
+            const exitJs = document.getElementById('exitJs');
+            exitJs.addEventListener('click', function(){
+                const divJs = document.getElementById('divJs');
+                divJs.setAttribute('style', 'visibility: hidden');
+            })
+            // HTML E CSS
+            const buttonViewCodeHtml = document.getElementById('showHtml');
+            buttonViewCodeHtml.addEventListener('click', function(){
+                const divHtml = document.getElementById('divHtml');
+                divHtml.removeAttribute('style');
+            });
+            const exitHtml = document.getElementById('exitHtml');
+            exitHtml.addEventListener('click', function(){
+                const divHtml = document.getElementById('divHtml');
+                divHtml.setAttribute('style', 'visibility: hidden');
+            });
         </script>
     </body>
 </html>
