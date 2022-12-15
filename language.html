@@ -80,7 +80,7 @@
                 font-size: 20px;
             }
 
-            img{
+            .sectionimage{
                 margin: 10px;
                 height: 250px;
                 width: 250px;
@@ -123,23 +123,25 @@
                 font-size: 22.2px;
             }
 
-            section:hover{
-                -webkit-transform: scale(1.05);
-                -ms-transform: scale(1.05);
-                transform: scale(1.05);
-            }
-
             .invisibleButton{
                 border: solid red 1px;
                 position: absolute;
                 top: 0px;
                 width: 99.8%;
-                height: 150vh;
+                height: 170vh;
                 background-color: #cccccc;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
             }
 
             #exit{
                 width: 7%;
+            }
+
+            .divimage{
+                width: 40%;
+                height: 75vh;
             }
         </style>
     </head>
@@ -154,8 +156,8 @@
                 </nav>
             </header>
             <main id="mainbox">
-                <section id="linguagec" class="section" class="hover">
-                    <img src="https://cdn.pixabay.com/photo/2017/04/14/11/45/letter-c-2229970_960_720.png" alt="Language C logo">
+                <section id="linguagec" class="section">
+                    <img src="https://cdn.pixabay.com/photo/2017/04/14/11/45/letter-c-2229970_960_720.png" alt="Language C logo" class="sectionimage">
                     <p class="about">A linguagem C foi a primeira linguagem que tive contato e é a minha linguagem preferida, 
                         apesar da dificuldade eu adoro a sintaxe complexa, apartir dela descobri que sou apaixonado por back-end e low languages. <br>
                         Apesar de C ser minha linguagem favorita, ainda tem muitos conceitos desconhecidos e sempre 
@@ -165,18 +167,21 @@
                 <button id="showC" class="button">View code</button>
                 <div id="divC" style="visibility:hidden" class="invisibleButton">
                     <button class="button" id="exitC">x</button>
-                    <img src="" alt="Códigos programados em linguagem C">
+                    <img src="./images/parte 1.png" alt="Códigos programados em linguagem C" class="divimage">
+                    <img src="./images/parte 2.png" alt="Códigos programados em linguagem C" class="divimage">
+                    <img src="./images/parte 3.png" alt="Códigos programados em linguagem C" class="divimage">
+                    <img src="./images/parte 4.png" alt="Códigos programados em linguagem C" class="divimage">
                     <p>
                         ALGUM CONTEUDO
                     </p>
                 </div>
-                <section id="javascript" class="sectiontwo" class="hover">
+                <section id="javascript" class="sectiontwo">
                     <p class="about">
                         Comecei a estudar Javascript pois não queria ter que esperar por 4 semestres para conseguir um emprego na área, por indicação de um amigo que trabalha na área, dei 
                         ínicio ao curso <em>DISCOVER</em> da Rocketseat e desde então sigo estudando sempre que tenho algum tempo, atualmente concluí 60% do curso.
                         Meu objetivo daqui para frente é dominar mais a DOM <em>(Document Object Model)</em> para ter mais clareza na integração do html com o javascript e melhorar minha lógica atrávez de exercícios e desafios.
                     </p>
-                    <img src="http://cdn.mos.cms.futurecdn.net/EzgdmaCQuT84bgDL4fhXZS.jpg" alt="JavaScript logo">
+                    <img src="http://cdn.mos.cms.futurecdn.net/EzgdmaCQuT84bgDL4fhXZS.jpg" alt="JavaScript logo" class="sectionimage">
                 </section>
                 <button id="showJs" class="button">View code</button>
                 <div id="divJs" style="visibility: hidden" class="invisibleButton">
@@ -186,8 +191,8 @@
                         ALGUM CONTEUDO
                     </p>
                 </div>
-                <section id="html" class="section" class="hover">
-                    <img src="https://c4.wallpaperflare.com/wallpaper/197/996/858/abstract-css-html5-webdesign-wallpaper-preview.jpg" alt="css and html image">
+                <section id="html" class="section">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/197/996/858/abstract-css-html5-webdesign-wallpaper-preview.jpg" alt="css and html image" class="sectionimage">
                     <p class="about">
                         Fui introduzido a aprender HTML e CSS graças ao curso da Rocketseat, nunca fui muito fã de front-end mas ao decorrer do meu aprendizado me dei conta que é imensamente divertido lidar com conteúdo e estilização.
                         Esse portifólio é meu primeiro projeto após adquirir um conhecimento básico de ambas tecnologias, atualmente pretendo melhorar cada vez mais minha semântica para dar mais acessibilidade as pessoas e acionar mais motores de buscas.
