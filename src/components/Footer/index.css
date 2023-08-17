@@ -19,9 +19,10 @@
 }
 
 #copyright-container-footer{
-   font-size: 22px;
+   width: 100%;
+   font-size: 120%;
    display: flex;
-   justify-content: center;
+   justify-content: flex-start;
    align-items: center;
    gap: 5px;
 }
