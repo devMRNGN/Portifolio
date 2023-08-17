@@ -1,0 +1,15 @@
+#infopessoal-container{
+   display: flex;
+   gap: 2px;
+}
+
+#key-infopessoal{
+   color: #a2a8ab;
+   font-size: 130%;
+   font-weight: bold;
+}
+
+#value-infopessoal{
+   color: #E4E6EB;
+   font-size: 130%;
+}

@@ -1,0 +1,23 @@
+#projeto-div{
+   width: 85%;
+   height: 100vh;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+}
+
+#card-projects{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   gap: 5%;
+}
+
+#title-projetos{
+   font-size: 40px;
+   text-align: center;
+   font-weight: bold;
+   color: #E4E6EB;
+}
