@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import logo from '../../assets/PortifolioImages/logo.png';
 import './index.css';
 
 const Header = () => {
@@ -38,7 +39,7 @@ const Header = () => {
     <header id="header-div">
       <nav id="header-nav">
         <a id="header-logo" href="#sub-container">
-          JOÃO MARANGONI
+          <img id="logo-style" src={logo} alt="Uma logo escrito DM" />
         </a>
         <div id="header-ways">
           <a
