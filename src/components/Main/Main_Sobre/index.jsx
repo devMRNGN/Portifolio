@@ -77,7 +77,7 @@ const MainSobre = () => {
                   </div>
                </div>
                <button id="curriculo-button">
-                  <a id="curriculo-link" href={Curriculo} download>Baixar Currículo</a>
+                  <a id="curriculo-link" href={Curriculo} download>BAIXAR CURRÍCULO</a>
                </button>
             </div>
             <img id="content-image" src={Banner} alt="Um menino com vários pensamentos em sua cabeça" />
@@ -91,7 +91,7 @@ const MainSobre = () => {
                }`}
                onClick={activityButton}
             >
-               Educação
+               EDUCAÇÃO
             </button>
             <button
                id="habilidades"
@@ -100,7 +100,7 @@ const MainSobre = () => {
                }`}
                onClick={activityButton}
             >
-               Habilidades
+               HABILIDADES
             </button>
             <button
                id="experiencias"
@@ -109,7 +109,7 @@ const MainSobre = () => {
                }`}
                onClick={activityButton}
             >
-               Experiências
+               EXPERIÊNCIAS
             </button>
          </div>
          <span className="title-render-information">{informTitle}</span>

@@ -72,7 +72,7 @@ const MainContato = () => {
                   <input className='input-contate' type="text" name='content' onChange={setarMensagem} />
                </div>
                <button id="button-contate-email" onClick={sendEmail}>
-                  Enviar mensagem
+                  ENVIAR MENSAGEM
                </button>
                <div id="container-container-icons-contate">
                   <div id="icons-container-contate">

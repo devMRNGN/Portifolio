@@ -38,7 +38,7 @@ const Header = () => {
     <header id="header-div">
       <nav id="header-nav">
         <a id="header-logo" href="#sub-container">
-          João Marangoni
+          JOÃO MARANGONI
         </a>
         <div id="header-ways">
           <a
@@ -51,7 +51,7 @@ const Header = () => {
               color: buttonSelected === 'sub-container' ? '#00fff2' : '#E4E6EB',
             }}
           >
-            Portifolio
+            PORTIFÓLIO
           </a>
           <a
             id="header-button-sobre"
@@ -63,7 +63,7 @@ const Header = () => {
               color: buttonSelected === 'sobre-container' ? '#00fff2' : '#E4E6EB',
             }}
           >
-            Sobre
+            SOBRE
           </a>
           <a
             id="header-button-projetos"
@@ -75,7 +75,7 @@ const Header = () => {
               color: buttonSelected === 'projeto-div' ? '#00fff2' : '#E4E6EB',
             }}
           >
-            Projetos
+            PROJETOS
           </a>
           <a
             id="header-button-contato"
@@ -87,7 +87,7 @@ const Header = () => {
               color: buttonSelected === 'container-contate' ? '#00fff2' : '#E4E6EB',
             }}
           >
-            Contate me
+            CONTATO
           </a>
         </div>
       </nav>

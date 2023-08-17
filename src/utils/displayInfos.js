@@ -12,8 +12,8 @@ const educacao = [
       dataFinal: "2023",
       title: "Platform Administrator Associate", 
       description: "Salesforce Certification",
-      link: "https://sforce.co/verifycerts",
-      codigo: "3287911"
+      link: "https://www.salesforce.com/trailblazer/devmrngn",
+      codigo: ""
    },
    {
       dataInicio: "Janeiro 30 -",
@@ -64,8 +64,8 @@ const experiencias = [
    {
       dataInicio: "Fevereiro, 2023 - ",
       dataFinal: "Atual",
-      title: "Desenvolvedor de Sistemas", 
-      description: "Beecloud Desenvolvedor de Sistemas (Fullstack)",
+      title: "Beecloud: Desenvolvedor de Sistemas", 
+      description: "Realizo tarefas de desenvolvedor Fullstack, tanto frontend como backend",
       link: "",
       codigo: ""
    },

@@ -13,7 +13,7 @@ const infosPessoais1 = [
    },
    {
       label: "Linguagens",
-      text: "Português e Ingles"
+      text: "Português, Ingles"
    },
 ];
 

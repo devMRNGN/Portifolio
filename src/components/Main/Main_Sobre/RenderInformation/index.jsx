@@ -8,10 +8,14 @@ const RenderInformation = ({dataInicio, dataFinal, title, description, link, cod
          <div className='container-information'>
             <span className='title-information'>{title} - {description}</span>
             {
-               (link != '' && codigo != '') && (
+               (link != '') && (
                   <div className='link-codigo-container'>
                      <span className='link-codigo-information'>Acesse: <a id="render-link" href={link} target='_blank' rel="noreferrer">{link}</a></span>
-                     <span className='link-codigo-information'>Chave: {codigo}</span>
+                     {
+                        (codigo != '') && (
+                           <span className='link-codigo-information'>Chave: {codigo}</span>
+                        )
+                     }
                   </div>
                )
             }

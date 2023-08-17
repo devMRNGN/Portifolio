@@ -59,12 +59,12 @@
    height: 78vh;
 
    display: flex;
-   justify-content: space-evenly;
+   justify-content: center;
 }
 
 #text-container-sobre{
    height: 100%;
-   width: 45%;
+   width: 50%;
    color: #E4E6EB;
 
    display: flex;
@@ -125,11 +125,11 @@
 #curriculo-button{
    color: #E4E6EB;
    padding: 10px 20px 10px 20px;
-   font-size: 25px;
+   font-size: 140%;
    border-radius: 10px;
    background-color: hsl(0, 0%, 18.82%);
    font-weight: bold;
-   margin: 3%;
+   margin: 2%;
    border: none;
 }
 
@@ -166,7 +166,7 @@
    align-items: center;
 
    width: 12%;
-   height: 5vh;
+   height: 6vh;
 }
 
 .buttons-about-background{
@@ -182,7 +182,7 @@
 }
 
 .render-informations{
-   margin-bottom: 4%;
+   margin-bottom: 5%;
    width: 80%;
    height: 70%;
 
@@ -190,6 +190,7 @@
    justify-content: flex-start;
    align-items: flex-start;
    flex-wrap: wrap;
+   gap: 4%;
 }
 
 .title-render-information{
@@ -198,5 +199,5 @@
    width: 80%;
    height: 5vh;
 
-   color: white;
+   color: #00fff2;
 }
