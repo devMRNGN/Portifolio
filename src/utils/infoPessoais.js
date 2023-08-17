@@ -28,7 +28,7 @@ const infosPessoais2 = [
    },
    {
       label: "Email",
-      text: "joao.tadeuzi00@gmail.com"
+      text: "devmarangoni@gmail.com"
    },
    {
       label: "Freelance",

@@ -42,7 +42,7 @@ const MainContato = () => {
          return;
       }
       
-      const link = `mailto:joao.tadeuzi00@gmail.com?subject=${assunto}&body=${mensagem}`;
+      const link = `mailto:devmarangoni@gmail.com?subject=${assunto}&body=${mensagem}`;
       setEmpty();
       window.location.href = link;
    }
@@ -79,7 +79,7 @@ const MainContato = () => {
                      <a href="https://www.salesforce.com/trailblazer/devmrngn" target='_blank' rel="noreferrer"><img src={iconSalesforce} alt="Icone Trailhead"/></a>
                      <a href="https://github.com/devMRNGN" target='_blank' rel="noreferrer"><img src={iconGithub} alt="Icone Github"/></a>
                      <a href="https://www.linkedin.com/in/jotamrngn" target='_blank' rel="noreferrer"><img src={iconLinkedin} alt="Icone Linkedin"/></a>
-                     <a href="mailto:joao.tadeuzi00@gmail.com" target='_blank' rel="noreferrer"><img src={iconGmail} alt="Icone Gmail"/></a>
+                     <a href="mailto:devmarangoni@gmail.com" target='_blank' rel="noreferrer"><img src={iconGmail} alt="Icone Gmail"/></a>
                   </div>
                </div>
             </div>
