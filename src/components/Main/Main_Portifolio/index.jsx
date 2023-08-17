@@ -8,9 +8,9 @@ const MainPortifolio = () => {
          <div id="text-container">
             <h1 className='h1'>Seja bem-vindo!</h1>
             <h2 className='h2'>Desenvolvedor Fullstack</h2>
-            <p className='p'>Eu sou o João Marangoni, atualmente sou estagiário na empresa Beecloud, 
-               trabalho na parte de Frontend, porém, já trabalhei com Backend.
-               Estou cursando o 2º semestre na faculdade de tecnologias {"(FATEC)"}.
+            <p className='p'>Pouco se pode esperar de alguém que só se esforça quando tem a certeza de vir a ser recompensado. 
+               O verdadeiro valor das coisas é o esforço e o problema de as adquirir. 
+               Ama-se mais o que se conquista com esforço..
             </p>
          </div>
       </div>
