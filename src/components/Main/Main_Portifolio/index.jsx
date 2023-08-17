@@ -10,7 +10,7 @@ const MainPortifolio = () => {
             <h2 className='h2'>Desenvolvedor Fullstack</h2>
             <p className='p'>Pouco se pode esperar de alguém que só se esforça quando tem a certeza de vir a ser recompensado. 
                O verdadeiro valor das coisas é o esforço e o problema de as adquirir. 
-               Ama-se mais o que se conquista com esforço..
+               Ama-se mais o que se conquista com esforço.
             </p>
          </div>
       </div>
