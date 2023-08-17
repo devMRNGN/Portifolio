@@ -1,8 +1,3 @@
-# React + Vite
+# Portifolio: Explorando Minha Jornada Profissional
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Neste repositório, você encontrará uma amostra cuidadosamente selecionada dos meus trabalhos e conquistas ao longo da minha carreira. De projetos de design a desenvolvimento, esta coleção representa minha paixão, habilidades e crescimento. Cada projeto conta uma história única sobre meu percurso profissional.
