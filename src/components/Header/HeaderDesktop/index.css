@@ -68,6 +68,7 @@
       background-color: #242526;
 
       position: fixed;
+      z-index: 9999;
    }
 
    #header-mobile-container{
