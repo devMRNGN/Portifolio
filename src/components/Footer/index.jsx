@@ -18,8 +18,11 @@ const Footer = () => {
          </div>
          <div id="copyright-container-footer">
             <span>Copyright</span>
-            <img src={iconCopyright} alt="Icone Copyright" width="25px" />
-            <span>{year} - Todos direitos reservados - devmarangoni.com</span>
+            <img id="img-copyright" src={iconCopyright} alt="Icone Copyright" width="25px" />
+            <div id="text-copyright">
+               <span>{year} - Todos direitos reservados</span>
+               <span id="link-copyright">devmarangoni.com</span>
+            </div>
          </div>
       </div>
    )

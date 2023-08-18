@@ -56,3 +56,65 @@
 #button-code:hover{
    background-color: #3A3B3C;
 }
+
+@media (max-width: 767px){
+   #card-div{
+      border-radius: 20px;
+      width: 100%;
+      margin-bottom: 5%;
+      height: auto;
+   
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      
+      background-color: #242526;
+   }
+   
+   #image{
+      width: 100%;
+      height: 380px;
+      padding: 10px;
+      border-radius: 20px;
+      background-color: #242526;
+   }
+   
+   #title{
+      font-size: 25px;
+      font-weight: bold;
+      border-radius: 20px;
+      padding: 0 10px 0 10px;
+      margin-top: 3px;
+      color: #E4E6EB;
+   }
+   
+   #description{
+      text-align: justify;
+      width: 95%;
+      font-size: 125%;
+      margin-top: 5px;
+      border-radius: 20px;
+      height: 12%;
+      padding-left: 10px;
+      color: #c5cdd0;
+   }
+   
+   #button-code {
+      padding: 10px 20px 10px 20px;
+      font-size: 20px;
+      border-radius: 10px;
+      background-color: hsl(0, 0%, 18.82%);
+      font-weight: bold;
+      margin: 3%;
+      border: none;
+   }
+   
+   #link-code {
+      text-decoration: none;
+      color: #E4E6EB;
+   }
+   
+   #button-code:hover{
+      background-color: #3A3B3C;
+   }
+}

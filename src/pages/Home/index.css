@@ -5,3 +5,13 @@
    background-color: #18191A;
    height: auto;
 } 
+
+@media (max-width: 767px){
+   #home-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #18191A;
+      height: auto;
+   } 
+}
