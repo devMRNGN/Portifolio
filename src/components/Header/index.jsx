@@ -55,10 +55,10 @@ const Header = () => {
 
   function activeLateralBar(){
     const lateralBar = document.querySelector(".lateral-bar-header");
-    if(lateralBar.classList.contains("active")){
-      lateralBar.classList.remove("active");
+    if(lateralBar.classList.contains("active-sidebar")){
+      lateralBar.classList.remove("active-sidebar");
     }else{
-      lateralBar.classList.add("active");
+      lateralBar.classList.add("active-sidebar");
     }
   }
 
@@ -76,56 +76,54 @@ const Header = () => {
               </button>
             </div>
             <div className='lateral-bar-header'>
-              <nav className='nav-lateral-bar'>
-                <a
-                  id="header-button-portifolio"
-                  href="#sub-container"
-                  className={`header-links ${buttonSelected === 'sub-container' ? 'active' : ''}`}
-                  onClick={(e) => handleLinkClick(e, 'sub-container')}
-                  style={{
-                    backgroundColor: buttonSelected === 'sub-container' ? '#3A3B3C' : 'hsl(0, 0%, 18.82%)',
-                    color: buttonSelected === 'sub-container' ? '#00fff2' : '#E4E6EB',
-                  }}
-                >
-                  PORTIFÓLIO
-                </a>
-                <a
-                  id="header-button-sobre"
-                  href="#sobre-container"
-                  className={`header-links ${buttonSelected === 'sobre-container' ? 'active' : ''}`}
-                  onClick={(e) => handleLinkClick(e, 'sobre-container')}
-                  style={{
-                    backgroundColor: buttonSelected === 'sobre-container' ? '#3A3B3C' : 'hsl(0, 0%, 18.82%)',
-                    color: buttonSelected === 'sobre-container' ? '#00fff2' : '#E4E6EB',
-                  }}
-                >
-                  SOBRE
-                </a>
-                <a
-                  id="header-button-projetos"
-                  href="#projeto-div"
-                  className={`header-links ${buttonSelected === 'projeto-div' ? 'active' : ''}`}
-                  onClick={(e) => handleLinkClick(e, 'projeto-div')}
-                  style={{
-                    backgroundColor: buttonSelected === 'projeto-div' ? '#3A3B3C' : 'hsl(0, 0%, 18.82%)',
-                    color: buttonSelected === 'projeto-div' ? '#00fff2' : '#E4E6EB',
-                  }}
-                >
-                  PROJETOS
-                </a>
-                <a
-                  id="header-button-contato"
-                  href="#container-contate"
-                  className={`header-links ${buttonSelected === 'container-contate' ? 'active' : ''}`}
-                  onClick={(e) => handleLinkClick(e, 'container-contate')}
-                  style={{
-                    backgroundColor: buttonSelected === 'container-contate' ? '#3A3B3C' : 'hsl(0, 0%, 18.82%)',
-                    color: buttonSelected === 'container-contate' ? '#00fff2' : '#E4E6EB',
-                  }}
-                >
-                  CONTATO
-                </a>
-              </nav>
+              <a
+                id="header-button-portifolio"
+                href="#sub-container"
+                className={`header-links ${buttonSelected === 'sub-container' ? 'active' : ''}`}
+                onClick={(e) => handleLinkClick(e, 'sub-container')}
+                style={{
+                  backgroundColor: buttonSelected === 'sub-container' ? '#3A3B3C' : 'hsl(0, 0%, 18.82%)',
+                  color: buttonSelected === 'sub-container' ? '#00fff2' : '#E4E6EB',
+                }}
+              >
+                PORTIFÓLIO
+              </a>
+              <a
+                id="header-button-sobre"
+                href="#sobre-container"
+                className={`header-links ${buttonSelected === 'sobre-container' ? 'active' : ''}`}
+                onClick={(e) => handleLinkClick(e, 'sobre-container')}
+                style={{
+                  backgroundColor: buttonSelected === 'sobre-container' ? '#3A3B3C' : 'hsl(0, 0%, 18.82%)',
+                  color: buttonSelected === 'sobre-container' ? '#00fff2' : '#E4E6EB',
+                }}
+              >
+                SOBRE
+              </a>
+              <a
+                id="header-button-projetos"
+                href="#projeto-div"
+                className={`header-links ${buttonSelected === 'projeto-div' ? 'active' : ''}`}
+                onClick={(e) => handleLinkClick(e, 'projeto-div')}
+                style={{
+                  backgroundColor: buttonSelected === 'projeto-div' ? '#3A3B3C' : 'hsl(0, 0%, 18.82%)',
+                  color: buttonSelected === 'projeto-div' ? '#00fff2' : '#E4E6EB',
+                }}
+              >
+                PROJETOS
+              </a>
+              <a
+                id="header-button-contato"
+                href="#container-contate"
+                className={`header-links ${buttonSelected === 'container-contate' ? 'active' : ''}`}
+                onClick={(e) => handleLinkClick(e, 'container-contate')}
+                style={{
+                  backgroundColor: buttonSelected === 'container-contate' ? '#3A3B3C' : 'hsl(0, 0%, 18.82%)',
+                  color: buttonSelected === 'container-contate' ? '#00fff2' : '#E4E6EB',
+                }}
+              >
+                CONTATO
+              </a>
             </div>
           </div>
         :
