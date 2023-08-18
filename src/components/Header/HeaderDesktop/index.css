@@ -92,6 +92,7 @@
    #header-logo-mobile{   
       height: 8vh;
       width: 40%;
+      z-index: 100;
    }
 
    #logo-style{
@@ -103,15 +104,14 @@
    }
 
    .lateral-bar-header{
-      width: 100%;
-      max-width: 320px;
-      height: 76vh;
+      width: 68%;
+      height: 100vh;
       background-color: #242526;
 
       position: fixed;
       top: 0;
       right: -500px;
-      transition: 0.5s ease;
+      transition: 0.3s ease;
    }
 
    #container-links-header-mobile{
