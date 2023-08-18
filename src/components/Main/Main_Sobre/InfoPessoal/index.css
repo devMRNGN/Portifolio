@@ -13,3 +13,22 @@
    color: #E4E6EB;
    font-size: 130%;
 }
+
+@media (max-width: 767px){
+   #infopessoal-container{
+      display: flex;
+      gap: 5px;
+      margin-bottom: 10px;
+   }
+   
+   #key-infopessoal{
+      color: #a2a8ab;
+      font-size: 130%;
+      font-weight: bold;
+   }
+   
+   #value-infopessoal{
+      color: #E4E6EB;
+      font-size: 130%;
+   }
+}
