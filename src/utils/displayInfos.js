@@ -11,7 +11,7 @@ const educacao = [
       dataInicio: "Abril 24 -",
       dataFinal: "2023",
       title: "Salesforce Certified JavaScript Developer I", 
-      description: "Salesforce Developer Certification",
+      description: "Salesforce Certification",
       link: "https://www.salesforce.com/trailblazer/devmrngn",
       codigo: ""
    },

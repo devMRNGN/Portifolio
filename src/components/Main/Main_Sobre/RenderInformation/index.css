@@ -55,13 +55,14 @@
 
 @media (max-width: 767px){
    .container-render-information{
-      width: 90%;
-      height: 20vh;
+      width: 95%;
+      height: 32vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       flex-wrap: wrap;
       gap: 5px;
+      border: 1px solid red;
    
       padding: 10px;
    }
@@ -71,7 +72,6 @@
       justify-content: flex-start;
       flex-direction: column;
       align-items: center;
-      gap: 5px;
    }
    
    .title-render-information{
@@ -80,12 +80,12 @@
    }
    
    .dates-to-render{
-      font-size: 125%;
+      font-size: 115%;
       color: #B5B6B8;
    }
    
    .title-information{
-      font-size: 130%;
+      font-size: 120%;
       color: #E4E6EB;
    }
    
@@ -101,7 +101,7 @@
    }
    
    .link-codigo-information{
-      font-size: 108%;
+      font-size: 104%;
    }
    
    #render-link{
