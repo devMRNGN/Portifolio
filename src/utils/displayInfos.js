@@ -16,14 +16,6 @@ const educacao = [
       codigo: ""
    },
    {
-      dataInicio: "Abril 24 -",
-      dataFinal: "2023",
-      title: "Platform Administrator Associate", 
-      description: "Salesforce Certification",
-      link: "https://www.salesforce.com/trailblazer/devmrngn",
-      codigo: ""
-   },
-   {
       dataInicio: "Janeiro 30 -",
       dataFinal: "2023",
       title: "Discover Fundamentar", 
