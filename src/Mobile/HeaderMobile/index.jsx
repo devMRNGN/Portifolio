@@ -4,10 +4,6 @@ import mobileLogo from "../../assets/PortifolioImages/menu-icon-mobile.svg";
 import "../../components/Header/HeaderDesktop/index.css";
 
 const HeaderMobile = () => {
-  const home = window.document.getElementById("#home-container");
-  home.addEventListener("click", () => {
-    console.log("teste");
-  })
   const [buttonSelected, setButtonSelected] = useState(
     "header-button-portifolio"
   );
