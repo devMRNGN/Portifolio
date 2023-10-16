@@ -19,4 +19,4 @@ CardProject.propTypes = {
    title: PropTypes.string,
    description: PropTypes.string,
    link: PropTypes.string
-}
+} 

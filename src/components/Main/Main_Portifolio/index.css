@@ -12,7 +12,7 @@
 }
 
 #my-image{
-   border-radius: 20px;
+   border-radius: 78% 22% 77% 23% / 43% 43% 57% 57%;
 
    width: 30%;
    height: 45%;
@@ -62,7 +62,7 @@
    }
    
    #my-image{
-      border-radius: 10px;
+      border-radius: 57% 43% 68% 32% / 51% 36% 64% 49%;
    
       width: 65%;
       height: 40%;
