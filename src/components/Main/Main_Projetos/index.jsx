@@ -1,6 +1,6 @@
 import BankImage from '../../../assets/CardProjectImages/bank-project.svg';
 import CalculatorImage from '../../../assets/CardProjectImages/calculator-project.svg';
-import PresenceImage from '../../../assets/CardProjectImages/presence-project.svg';
+import processControllerImage from '../../../assets/CardProjectImages/process-controller.svg';
 import CardProject from './CardProject';
 import './index.css';
 
@@ -18,10 +18,10 @@ const cardProject = [
       link: "https://github.com/devMRNGN/SimpleBank"
    },
    {
-      image: PresenceImage,
-      title: "Lista de Presença",
-      description: "Esse projeto eu desenvolvi quando estava começando a aprender a utilizar o React, fazer requisições, etc. Uma lista de presença dinâmica.",
-      link: "https://github.com/devMRNGN/REACT_PresenceList"
+      image: processControllerImage,
+      title: "Controlador de Processos",
+      description: "Esse projeto eu desenvolvi para faculdade, ele basicamente simula um controlador de processos do tipo Round Robin sem prioridade.",
+      link: "https://controlador-round-robin-8r2z.vercel.app"
    }
 ];
 
