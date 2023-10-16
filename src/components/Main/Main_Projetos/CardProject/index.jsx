@@ -7,7 +7,7 @@ const CardProject = ({image, title, description, link}) => {
          <img id="image" src={image} alt={title} className='main-projetos-back' />
          <h3 id="title" className='main-projetos-back'>{title}</h3>
          <p id="description" className='main-projetos-back'>{description}</p>
-         <button id="button-code" className='main-projetos-back'><a id="link-code" href={link} rel="noreferrer" target='_blank'>VER CÓDIGO</a></button>
+         <button id="button-code" className='main-projetos-back'><a id="link-code" href={link} rel="noreferrer" target='_blank'>TESTAR PROJETO</a></button>
       </div>
    )
 }
