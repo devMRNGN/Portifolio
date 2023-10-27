@@ -57,7 +57,7 @@ const HeaderDesktop = () => {
                color: buttonSelected === "sub-container" ? "#00fff2" : "#E4E6EB",
                }}
             >
-               PORTIFÓLIO
+               HOME
             </a>
             <a
                id="header-button-sobre"
