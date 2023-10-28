@@ -9,7 +9,7 @@ const cardProject = [
       image: CalculatorImage,
       title: "Calculadora Responsiva",
       description: "Uma calculadora básica responsiva, 100% funcional, possui digitação com teclado, botão de desligar, apagar um caractere e apagar vários.",
-      link: "https://responsive-calculator-mqz32izze-devmrngn.vercel.app"
+      link: "https://responsive-calculator-beryl.vercel.app/"
    },
    {
       image: BankImage,
