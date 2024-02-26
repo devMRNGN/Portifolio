@@ -46,7 +46,7 @@ const habilidades = [
       dataInicio: "Desenvolvimento FRONTEND",
       dataFinal: "",
       title: "Frontend Developer", 
-      description: "Tecnologias: HTML, CSS, React e Figma",
+      description: "Tecnologias: Javascript, HTML, CSS, React e LWC.",
       link: "",
       codigo: ""
    },
@@ -54,15 +54,15 @@ const habilidades = [
       dataInicio: "Desenvolvimento BACKEND",
       dataFinal: "",
       title: "Backend Developer", 
-      description: "Tecnologias: Apex, NodeJS, Express, SOQL, Prisma e Mysql",
+      description: "Tecnologias: Apex, NodeJS, Typescript, Fastify, SOQL, SQL, Postgresql e Prisma.",
       link: "",
       codigo: ""
    },
    {
-      dataInicio: "Linguagens aprendidas",
+      dataInicio: "Linguagens",
       dataFinal: "",
       title: "Desenvolvo nas Linguagens", 
-      description: "Javascript, C, Java/Apex e PHP",
+      description: "Javascript, Typescript, Java, Apex e conceitos de CLEAN CODE.",
       link: "",
       codigo: ""
    },
@@ -72,8 +72,8 @@ const experiencias = [
    {
       dataInicio: "Fevereiro, 2023 - ",
       dataFinal: "Atual",
-      title: "Beecloud: Desenvolvedor de Sistemas", 
-      description: "Realizo tarefas de desenvolvedor Fullstack, tanto frontend como backend",
+      title: "Beecloud: Desenvolvedor de Sistemas Junior", 
+      description: "Realizo tarefas de desenvolvedor Fullstack.",
       link: "",
       codigo: ""
    },

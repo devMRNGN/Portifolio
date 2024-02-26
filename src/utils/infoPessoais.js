@@ -5,7 +5,7 @@ const infosPessoais1 = [
    },
    {
       label: "Idade",
-      text: "20 Anos"
+      text: "21 Anos"
    },
    {
       label: "Nacionalidade",

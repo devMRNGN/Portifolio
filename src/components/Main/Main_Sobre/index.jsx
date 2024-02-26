@@ -54,9 +54,10 @@ const MainSobre = () => {
                   <span className='destaque-color'>Fullstack</span>
                </div>
                <p id="sobre-description">
-                  Eu sou o João Marangoni, atualmente sou estagiário na empresa Beecloud, 
-                  trabalho na parte de Frontend, porém, já trabalhei com Backend. 
-                  Estou cursando o 2º semestre na faculdade de tecnologias {"(FATEC)"}.
+                  Eu sou o João Marangoni, atualmente sou Desenvolvedor de software Junior na empresa Beecloud, 
+                  trabalho na parte de Fullstack, realizando tarefas tanto de Frontend como de Backend, 
+                  minhas principais linguagens são Apex e Javascript. 
+                  Estou cursando o 4º semestre na faculdade de tecnologias {"(FATEC)"}.
                </p>
                <Divider/>
                <span className="personal-infos">INFORMAÇÕES PESSOAIS</span>
