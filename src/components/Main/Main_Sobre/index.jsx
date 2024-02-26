@@ -55,7 +55,7 @@ const MainSobre = () => {
                </div>
                <p id="sobre-description">
                   Eu sou o João Marangoni, atualmente sou Desenvolvedor de software Junior na empresa Beecloud, 
-                  trabalho na parte de Fullstack, realizando tarefas tanto de Frontend como de Backend, 
+                  trabalho como Fullstack, realizando tarefas tanto de Frontend como de Backend, 
                   minhas principais linguagens são Apex e Javascript. 
                   Estou cursando o 4º semestre na faculdade de tecnologias {"(FATEC)"}.
                </p>
